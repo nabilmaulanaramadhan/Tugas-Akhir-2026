@@ -6,10 +6,6 @@ use App\Http\Controllers\EmployeeController;
 use Illuminate\Support\Facades\Route;
 
 // ==================== LOGIN ====================
-Route::get('/', function(){
-    view('dashboard')
-};
-
 
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');
